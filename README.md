@@ -2,7 +2,7 @@
 
 ## Información sobre los archivos
 
-En la carpeta 'prjPoliRetos_grupo3' se encontrará todo lo realizado con respecto al proyecto de los poliRETOS, habrán 8 clases, cada una corresponde a cada sección del trabajo. En la carpeta 'evidencias' estarán los archivos .pdf de los códigos realizados a mano y 'App.java' es el archivo final ejecutable.
+En la carpeta 'prjPoliRetos_grupo3' se encontrará todo lo realizado con respecto al proyecto de los poliRETOS, habrán 8 paquetes y controllers, cada una corresponde a cada sección del trabajo. En la carpeta 'evidencias' estarán los archivos .pdf de los códigos realizados a mano y 'App.java' es el archivo final ejecutable.
 
 ## División del trabajo
 
