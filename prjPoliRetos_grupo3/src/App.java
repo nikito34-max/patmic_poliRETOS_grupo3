@@ -46,7 +46,7 @@ public class App {
 
         //lo de arriba es para las entradas necesarias, agregar mas o modificar si sus ejercicios lo piden, luego se pasaran como parametros
         // A continuacion, se llamaran a los metodos de los objetos con los parametros establecidos al inicio de este archivo (entradas),
-        //creados al principio, por ejemplo, fig.g3_mostrarFigura1(ancho, largo), serNum.crearSerie3(numTerminos), serCar.invertirFrase(frase), etc
+        //creados al principio, por ejemplo, fig.g3_mostrarFigura1For(ancho, largo), serNum.crearSerie3While(numTerminos), serCar.invertirFrase(frase)DoWhile, etc
         //Se dividira de acuerdo al numero de ejercicios de cada seccion, hay que respetar los espacios para evitar conflictos del merge.
         //Empezamos desde la linea 52, que corresponde al inicio de la primera seccion, eliminar estos comentarios de seccion-fin luego de haber puesto su parte ya que no son permitidos.
         //Seccion 1
@@ -60,9 +60,51 @@ public class App {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         //FIN
         
         //Seccion 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -90,9 +132,65 @@ public class App {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         //FIN
 
         //Seccion 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -106,9 +204,45 @@ public class App {
 
 
 
+
+
+
+
+
+
+
+
+
+
         //FIN
 
         //Seccion 6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -127,9 +261,35 @@ public class App {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
         //FIN
 
         //Seccion 8 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
