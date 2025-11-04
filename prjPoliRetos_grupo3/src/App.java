@@ -26,32 +26,51 @@ public class App {
         entrada.nextLine();
         System.out.print("Ingresa una frase: ");  //cadena de caracteres
         String frase = entrada.nextLine();
-        //Agregar mas(o modificar) de ser necesario
-
-
-
-
-
-
-
-
         
-        // new ControllerSeccion1();
-        // new ControllerSeccion2();
-        // new ControllerSeccion3();
-        new ControllerSeccion4(frase, entrada);
-        // new ControllerSeccion5();
-        // new ControllerSeccion6();
-        // new ControllerSeccion7();
-        // new ControllerSeccion8();
+        //Agregar mas de ser necesario
+        System.out.println();
+        System.out.println("Seleccione el módulo:");
+        System.out.println("\t1 - Series Numericas");
+        System.out.println("\t2 - Series de Caracteres");
+        System.out.println("\t3 - Figuras");
+        System.out.println("\t4 - Cadena de Caracteres");
+        System.out.println("\t5 - Arrays");
+        System.out.println("\t6 - Loading");
+        System.out.println("\t7 - Recursion");
+        System.out.println("\t8 - Automatas");
+        System.out.print("> ");
+        int opcion = entrada.nextInt();
         
+        switch (opcion) {
+            case 1:
+                new ControllerSeccion1();
+                break;
+            case 2:
+                new ControllerSeccion2();
+                break;
+            case 3:
+                new ControllerSeccion3();
+                break;
+            case 4:
+            new ControllerSeccion4(frase, entrada);
+                break;
+            case 5:
+                new ControllerSeccion5();
+                break;
+            case 6:
+                new ControllerSeccion6();
+                break;
+            case 7:
+                new ControllerSeccion7().g3_ejecutar();
+                break;
+            case 8:
+                new ControllerSeccion8().g3_ejecutar();
+                break;
+            default:
+                System.out.println("Opción inválida.");
+                break;
+        }
 
-
-
-
-
-
-        
         System.out.println("\nProyecto Finalizado");
         entrada.close();
     }
