@@ -5,9 +5,7 @@ public class ControllerSeccion4 {
     /**
      * Ejecución de métodos mediante constructor
      * @param frase frase ingresada por el usuario
-     * @param vocal vocal ingresada por el usuario
-     * @param letra letra ingresada por el usuario
-     * @param entrada Scanner para adivinanza por parte del usuario
+     * @param entrada Scanner para datos específicos y juegos
      */
     public ControllerSeccion4(String frase, Scanner entrada) {
         cadCar = new CadenaCaracteres();

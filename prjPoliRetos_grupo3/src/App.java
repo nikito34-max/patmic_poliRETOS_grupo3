@@ -40,7 +40,7 @@ public class App {
         // new ControllerSeccion2();
         // new ControllerSeccion3();
         new ControllerSeccion4(frase, entrada);
-        // new ControllerSeccion5();
+        new ControllerSeccion5(entrada);
         // new ControllerSeccion6();
         // new ControllerSeccion7();
         // new ControllerSeccion8();
