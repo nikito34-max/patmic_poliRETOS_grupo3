@@ -14,3 +14,13 @@ La división del trabajo es la siguiente:
 - Angelo Muñoz: Loading.
 - Danny Pineda: Recursión, grafos y autómatas.
 
+El orden en secciones es el siguiente:
+
+- Sección 1: Series numéricas.
+- Sección 2: Series de caracteres.
+- Sección 3: Figuras.
+- Sección 4: Cadenas de caracteres
+- Sección 5: Arrays
+- Sección 6: Loading.
+- Sección 7: Recursión.
+- Sección 8: Grafos y autómatas.

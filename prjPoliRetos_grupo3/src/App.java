@@ -12,11 +12,10 @@ import pkSecciones.Seccion8.ControllerSeccion8;
 public class App {
     public static void main(String[] args) {
 
-        System.out.println("Iniciando Proyecto PoliRETOS Grupo 3 \n");
-        System.out.println("patmic_poliRETOS por parte del Grupo 3\nIntegrantes:\nmuñoz.angelo\nortega.stefanie\nortega.nikolai\npaguay.fernando\npineda.danny\nAntes de iniciar, ingresa los siguientes datos:");
+        System.out.println("Iniciando Proyecto PoliRETOS Grupo 3");
+        System.out.println("\nIntegrantes:\nmuñoz.angelo\nortega.stefanie\nortega.nikolai\npaguay.fernando\npineda.danny\nAntes de iniciar, ingresa los siguientes datos:");
      
         Scanner entrada = new Scanner(System.in);
-        System.out.println("patmic_poliRETOS por parte del Grupo 3\nIntegrantes:\nmuñoz.angelo\nortega.stefanie\nortega.nikolai\npaguay.fernando\npineda.danny\nAntes de iniciar, ingresa los siguientes datos:");
         System.out.print("Numero de términos: ");
         int num_terminos = entrada.nextInt();
         System.out.print("Numero de niveles: ");
@@ -25,10 +24,16 @@ public class App {
         int ancho = entrada.nextInt();
         System.out.print("largo: ");
         int largo = entrada.nextInt();
+        entrada.nextLine();
         System.out.print("Ingresa un caracter: ");
         char caracter = entrada.next().charAt(0);
+        entrada.nextLine();
         System.out.print("Ingresa una frase: ");
         String frase = entrada.nextLine();
+        System.out.print("Ingresa una vocal (A eliminar en la frase): ");
+        char vocal = entrada.next().charAt(0);
+        System.out.print("Ingresa una letra (A eliminar en la frase): ");
+        char letra = entrada.next().charAt(0);
         entrada.nextLine();
         System.out.print("Tu nombre: ");
         String nombre = entrada.nextLine();
@@ -43,22 +48,24 @@ public class App {
 
 
 
+        
+        // new ControllerSeccion1();
+        // new ControllerSeccion2();
+        // new ControllerSeccion3();
+        new ControllerSeccion4(frase, vocal, letra, entrada);
+        // new ControllerSeccion5();
+        // new ControllerSeccion6();
+        // new ControllerSeccion7();
+        // new ControllerSeccion8();
+        
 
 
 
 
 
 
-
-        new ControllerSeccion1(num_terminos); //por ejemplo
-        new ControllerSeccion2();
-        new ControllerSeccion3();
-        new ControllerSeccion4();     //Agregar los parametros necesarios, tanto aqui como en el constructor del Controller, donde estaran sus metodos.
-        new ControllerSeccion5();
-        new ControllerSeccion6();
-        new ControllerSeccion7();
-        new ControllerSeccion8();
-
+        
         System.out.println("\nProyecto Finalizado");
+        entrada.close();
     }
 }
