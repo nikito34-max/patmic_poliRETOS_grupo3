@@ -43,10 +43,12 @@ public class App {
         
         switch (opcion) {
             case 1:
-                new ControllerSeccion1();
+                 System.out.println("=== SERIES NUMERICAS ===");
+                 new ControllerSeccion1(num_terminos).iniciarSeccion1();
                 break;
             case 2:
-                new ControllerSeccion2();
+                System.out.println("=== SERIES DE CARACTERES ===");
+                new ControllerSeccion2(num_terminos).iniciarSeccion2();
                 break;
             case 3:
                 new ControllerSeccion3();
@@ -75,3 +77,4 @@ public class App {
         entrada.close();
     }
 }
+
