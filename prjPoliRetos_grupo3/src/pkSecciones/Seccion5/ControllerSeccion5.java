@@ -1,10 +1,10 @@
 package pkSecciones.Seccion5;
+import java.util.Scanner;
 public class ControllerSeccion5 {
     private SeccionArrays secArr;
-
-    public ControllerSeccion5() {
+    public ControllerSeccion5(Scanner entrada) {
         secArr = new SeccionArrays();
-        // Aquí irán las llamadas a los métodos de SeccionArrays
+        secArr.g3_CargaNombre(entrada);
     }
 }
 

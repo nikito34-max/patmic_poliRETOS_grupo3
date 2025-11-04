@@ -28,6 +28,11 @@ public class App {
         String frase = entrada.nextLine();
         
         //Agregar mas de ser necesario
+    
+
+        boolean salir = false;
+        while (!salir) {
+
         System.out.println();
         System.out.println("Seleccione el módulo:");
         System.out.println("\t1 - Series Numericas");
@@ -38,9 +43,12 @@ public class App {
         System.out.println("\t6 - Loading");
         System.out.println("\t7 - Recursion");
         System.out.println("\t8 - Automatas");
+        System.out.println("\t9 - SALIR DEL PROGRAMA");
         System.out.print("> ");
         int opcion = entrada.nextInt();
-        
+  
+
+  
         switch (opcion) {
             case 1:
                  System.out.println("=== SERIES NUMERICAS ===");
@@ -51,13 +59,16 @@ public class App {
                 new ControllerSeccion2(num_terminos).iniciarSeccion2();
                 break;
             case 3:
+                System.out.println("=== FIGURAS ===");
                 new ControllerSeccion3();
                 break;
             case 4:
+            System.out.println("=== CADENAS DE CARACTERES ===");
             new ControllerSeccion4(frase, entrada);
                 break;
             case 5:
-                new ControllerSeccion5();
+            System.out.println("=== ARRAYS ===");
+                new ControllerSeccion5(entrada);
                 break;
             case 6:
                 new ControllerSeccion6();
@@ -68,9 +79,13 @@ public class App {
             case 8:
                 new ControllerSeccion8().g3_ejecutar();
                 break;
+            case 9:
+                salir = true;
+                break;
             default:
                 System.out.println("Opción inválida.");
                 break;
+        }
         }
 
         System.out.println("\nProyecto Finalizado");
