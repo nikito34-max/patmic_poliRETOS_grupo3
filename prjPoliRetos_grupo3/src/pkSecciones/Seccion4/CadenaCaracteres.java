@@ -78,11 +78,12 @@ public class CadenaCaracteres {
      * @param frase texto de entrada
      * @param vocal vocal a eliminar
      */
-    public void g3_eliminarVocal(String frase, char vocal) {
-        System.out.println("\nC03) Eliminar vocal '" + vocal + "' de la frase ingresada");
+    public void g3_eliminarVocal(String frase, Scanner entrada) {
+        System.out.println("\nC03) Eliminar vocal de la frase ingresada");
         frase = frase.toLowerCase();
+        System.out.print("Ingresa la vocal a eliminar: ");
+        char vocal = entrada.next().charAt(0);
         vocal = Character.toLowerCase(vocal);
-
         String resultado = "";
         for (int i = 0; i < frase.length(); i++) {
             char c = frase.charAt(i);
@@ -122,9 +123,11 @@ public class CadenaCaracteres {
      * @param frase texto de entrada
      * @param letra letra a eliminar
      */
-    public void g3_eliminarLetra(String frase, char letra) {
-        System.out.println("\nC04) Eliminar letra '" + letra + "' de la frase ingresada");
+    public void g3_eliminarLetra(String frase, Scanner entrada) {
+        System.out.println("\nC04) Eliminar letra de la frase ingresada");
         frase = frase.toLowerCase();
+        System.out.print("Ingresa la letra a eliminar: ");  
+        char letra = entrada.next().charAt(0);
         letra = Character.toLowerCase(letra);
 
         String resultado = "";
@@ -285,14 +288,14 @@ public class CadenaCaracteres {
      * @param entrada Scanner para adivinanza por parte del usuario
      */
     public void g3_anagrama(Scanner entrada) {
+        entrada.nextLine();
         System.out.println("\nC08) Juego de anagramas");
-
         String[][] conjunto = {
             {"ballena", "llenaba"},
             {"delira", "lidera"},
             {"enrique", "quieren"},
             {"alondra", "ladrona"},
-            {"españa", "apañes"}
+            {"amor", "roma"}
         };
 
         int indice = (int)(Math.random() * conjunto.length);

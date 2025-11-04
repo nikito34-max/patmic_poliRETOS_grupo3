@@ -13,33 +13,20 @@ public class App {
     public static void main(String[] args) {
 
         System.out.println("Iniciando Proyecto PoliRETOS Grupo 3");
-        System.out.println("\nIntegrantes:\nmuñoz.angelo\nortega.stefanie\nortega.nikolai\npaguay.fernando\npineda.danny\nAntes de iniciar, ingresa los siguientes datos:");
+        System.out.println("\nIntegrantes:\nmuñoz.angelo\nortega.stefanie\nortega.nikolai\npaguay.fernando\npineda.danny\nAntes de iniciar, ingresa los siguientes datos generales:");
      
+        //Solo parametros generales, que se usen para dos o mas ejercicios, para las demas usen el parametro Scanner entrada definido a continuación
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Numero de términos: ");
+        System.out.print("Numero de términos: "); //series numericas y caracteres
         int num_terminos = entrada.nextInt();
-        System.out.print("Numero de niveles: ");
+        System.out.print("Tamaño: ");       //figuras 
+        int tamanio = entrada.nextInt();
+        System.out.print("Niveles: ");      //figuras(triangulares, creo)
         int niveles = entrada.nextInt();
-        System.out.print("ancho: ");
-        int ancho = entrada.nextInt();
-        System.out.print("largo: ");
-        int largo = entrada.nextInt();
         entrada.nextLine();
-        System.out.print("Ingresa un caracter: ");
-        char caracter = entrada.next().charAt(0);
-        entrada.nextLine();
-        System.out.print("Ingresa una frase: ");
+        System.out.print("Ingresa una frase: ");  //cadena de caracteres
         String frase = entrada.nextLine();
-        System.out.print("Ingresa una vocal (A eliminar en la frase): ");
-        char vocal = entrada.next().charAt(0);
-        System.out.print("Ingresa una letra (A eliminar en la frase): ");
-        char letra = entrada.next().charAt(0);
-        entrada.nextLine();
-        System.out.print("Tu nombre: ");
-        String nombre = entrada.nextLine();
-        System.out.print("Tu apellido: ");
-        String apellido = entrada.nextLine();
-        //Agregar mas de ser necesario
+        //Agregar mas(o modificar) de ser necesario
 
 
 
@@ -52,7 +39,7 @@ public class App {
         // new ControllerSeccion1();
         // new ControllerSeccion2();
         // new ControllerSeccion3();
-        new ControllerSeccion4(frase, vocal, letra, entrada);
+        new ControllerSeccion4(frase, entrada);
         // new ControllerSeccion5();
         // new ControllerSeccion6();
         // new ControllerSeccion7();
