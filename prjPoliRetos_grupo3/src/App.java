@@ -26,84 +26,65 @@ public class App {
         entrada.nextLine();
         System.out.print("Ingresa una frase: ");  //cadena de caracteres
         String frase = entrada.nextLine();
-        //Agregar mas(o modificar) de ser necesario
-
-
-
-
-
-
-
-
-        
-        // new ControllerSeccion1();
-        // new ControllerSeccion2();
-        // new ControllerSeccion3();
-        new ControllerSeccion4(frase, entrada);
-        new ControllerSeccion5(entrada);
-        // new ControllerSeccion6();
-        // new ControllerSeccion7();
-        // new ControllerSeccion8();
 
         //Agregar mas de ser necesario
-    
-
         boolean salir = false;
+        
         while (!salir) {
 
-        System.out.println();
-        System.out.println("Seleccione el módulo:");
-        System.out.println("\t1 - Series Numericas");
-        System.out.println("\t2 - Series de Caracteres");
-        System.out.println("\t3 - Figuras");
-        System.out.println("\t4 - Cadena de Caracteres");
-        System.out.println("\t5 - Arrays");
-        System.out.println("\t6 - Loading");
-        System.out.println("\t7 - Recursion");
-        System.out.println("\t8 - Automatas");
-        System.out.println("\t9 - SALIR DEL PROGRAMA");
-        System.out.print("> ");
-        int opcion = entrada.nextInt();
-  
-
-  
-        switch (opcion) {
-            case 1:
-                 System.out.println("=== SERIES NUMERICAS ===");
-                 new ControllerSeccion1(num_terminos).iniciarSeccion1();
-                break;
-            case 2:
-                System.out.println("=== SERIES DE CARACTERES ===");
-                new ControllerSeccion2(num_terminos).iniciarSeccion2();
-                break;
-            case 3:
-                System.out.println("=== FIGURAS ===");
-                new ControllerSeccion3();
-                break;
-            case 4:
-            System.out.println("=== CADENAS DE CARACTERES ===");
-            new ControllerSeccion4(frase, entrada);
-                break;
-            case 5:
-            System.out.println("=== ARRAYS ===");
-                new ControllerSeccion5(entrada);
-                break;
-            case 6:
-                new ControllerSeccion6();
-                break;
-            case 7:
-                new ControllerSeccion7().g3_ejecutar();
-                break;
-            case 8:
-                new ControllerSeccion8().g3_ejecutar();
-                break;
-            case 9:
-                salir = true;
-                break;
-            default:
-                System.out.println("Opción inválida.");
-                break;
-        }
+            System.out.println();
+            System.out.println("Seleccione el módulo:");
+            System.out.println("\t1 - Series Numericas");
+            System.out.println("\t2 - Series de Caracteres");
+            System.out.println("\t3 - Figuras");
+            System.out.println("\t4 - Cadena de Caracteres");
+            System.out.println("\t5 - Arrays");
+            System.out.println("\t6 - Loading");
+            System.out.println("\t7 - Recursion");
+            System.out.println("\t8 - Automatas");
+            System.out.println("\t9 - SALIR DEL PROGRAMA");
+            System.out.print("> ");
+            int opcion = entrada.nextInt();
+    
+            switch (opcion) {
+                case 1:
+                    System.out.println("=== SERIES NUMERICAS ===");
+                    new ControllerSeccion1(num_terminos).iniciarSeccion1();
+                    break;
+                case 2:
+                    System.out.println("=== SERIES DE CARACTERES ===");
+                    new ControllerSeccion2(num_terminos).iniciarSeccion2();
+                    break;
+                case 3:
+                    System.out.println("=== FIGURAS ===");
+                    new ControllerSeccion3();
+                    break;
+                case 4:
+                    System.out.println("=== CADENAS DE CARACTERES ===");
+                    new ControllerSeccion4(frase, entrada);
+                    break;
+                case 5:
+                    System.out.println("=== ARRAYS ===");
+                    new ControllerSeccion5(entrada);
+                    break;
+                case 6:
+                    new ControllerSeccion6();
+                    break;
+                case 7:
+                    System.out.println("=== RECURSION ===");
+                    new ControllerSeccion7().g3_ejecutar();
+                    break;
+                case 8:
+                    System.out.println("=== AUTOMATAS ===");
+                    new ControllerSeccion8().g3_ejecutar();
+                    break;
+                case 9:
+                    salir = true;
+                    break;
+                default:
+                    System.out.println("Opción inválida.");
+                    break;
+            }
         }
 
         System.out.println("\nProyecto Finalizado");
