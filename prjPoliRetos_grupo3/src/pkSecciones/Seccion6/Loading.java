@@ -1,3 +1,5 @@
+package pkSecciones.Seccion6;
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -14,7 +16,7 @@ public class Loading {
     public static final String ANSI_CYAN = "\u001B[36m"; // Cian
     
     // El método main principal que actúa como un menú, usando do-while.
-    public static void main(String[] args) {
+    public void run() {
         
         Scanner scanner = new Scanner(System.in);
         boolean ejecutarOtra;
