@@ -19,11 +19,6 @@ public class App {
         Scanner entrada = new Scanner(System.in);
         System.out.print("Numero de términos: "); //series numericas y caracteres
         int num_terminos = entrada.nextInt();
-        System.out.print("Tamaño: ");       //figuras 
-        int tamanio = entrada.nextInt();
-        System.out.print("Niveles: ");      //figuras(triangulares, creo)
-        int niveles = entrada.nextInt();
-        entrada.nextLine();
         System.out.print("Ingresa una frase: ");  //cadena de caracteres
         String frase = entrada.nextLine();
 
@@ -57,8 +52,8 @@ public class App {
                     break;
                 case 3:
                     System.out.println("=== FIGURAS ===");
-                    new ControllerSeccion3();
-                    break;
+                     ControllerSeccion3 controller = new ControllerSeccion3();
+                     controller.inicializarfiguras();
                 case 4:
                     System.out.println("=== CADENAS DE CARACTERES ===");
                     new ControllerSeccion4(frase, entrada);
