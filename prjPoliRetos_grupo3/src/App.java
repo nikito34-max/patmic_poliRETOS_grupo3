@@ -19,6 +19,7 @@ public class App {
         Scanner entrada = new Scanner(System.in);
         System.out.print("Numero de términos: "); //series numericas y caracteres
         int num_terminos = entrada.nextInt();
+        entrada.nextLine(); 
         System.out.print("Ingresa una frase: ");  //cadena de caracteres
         String frase = entrada.nextLine();
         //Agregar mas(o modificar) de ser necesario
