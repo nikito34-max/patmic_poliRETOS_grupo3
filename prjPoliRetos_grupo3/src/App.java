@@ -15,33 +15,14 @@ public class App {
         System.out.println("Iniciando Proyecto PoliRETOS Grupo 3");
         System.out.println("\nIntegrantes:\nmuñoz.angelo\nortega.stefanie\nortega.nikolai\npaguay.fernando\npineda.danny\nAntes de iniciar, ingresa los siguientes datos generales:");
      
-        //Solo parametros generales, que se usen para dos o mas ejercicios, para las demas usen el parametro Scanner entrada definido a continuación
         Scanner entrada = new Scanner(System.in);
-        System.out.print("Numero de términos: "); //series numericas y caracteres
+        System.out.print("Numero de términos: ");
         int num_terminos = entrada.nextInt();
         entrada.nextLine(); 
-        System.out.print("Ingresa una frase: ");  //cadena de caracteres
+        System.out.print("Ingresa una frase: ");  
         String frase = entrada.nextLine();
-        //Agregar mas(o modificar) de ser necesario
-
-
-
-
-
-
-        
-        // new ControllerSeccion1();
-        // new ControllerSeccion2();
-        // new ControllerSeccion3();
-        // new ControllerSeccion6();
-        // new ControllerSeccion7();
-        // new ControllerSeccion8();
-
-        //Agregar mas de ser necesario
-
 
         boolean salir = false;
-        
         while (!salir) {
             System.out.println();
             System.out.println("Seleccione el módulo:");
