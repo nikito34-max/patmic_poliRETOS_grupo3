@@ -21,12 +21,27 @@ public class App {
         int num_terminos = entrada.nextInt();
         System.out.print("Ingresa una frase: ");  //cadena de caracteres
         String frase = entrada.nextLine();
+        //Agregar mas(o modificar) de ser necesario
+
+
+
+
+
+
+        
+        // new ControllerSeccion1();
+        // new ControllerSeccion2();
+        // new ControllerSeccion3();
+        // new ControllerSeccion6();
+        // new ControllerSeccion7();
+        // new ControllerSeccion8();
 
         //Agregar mas de ser necesario
+
+
         boolean salir = false;
         
         while (!salir) {
-
             System.out.println();
             System.out.println("Seleccione el módulo:");
             System.out.println("\t1 - Series Numericas");
@@ -80,10 +95,9 @@ public class App {
                     System.out.println("Opción inválida.");
                     break;
             }
-        }
-
-        System.out.println("\nProyecto Finalizado");
-        entrada.close();
     }
+    System.out.println("\nProyecto Finalizado");
+        entrada.close();
+ }
 }
 
