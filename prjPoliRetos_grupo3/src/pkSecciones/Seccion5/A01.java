@@ -3,12 +3,27 @@ package pkSecciones.Seccion5;
 import java.util.Scanner;
 
 public class A01 {
+
     public void g3_CargaNombreShowFor(Scanner entrada) {
         String[] palabras = {"Nikolai", "Gabriel", "Ortega", "Chugchilan"};
         int[] porcentajes = new int[palabras.length];
         for (int i = 0; i < palabras.length; i++) {
-            System.out.print("Ingrese el porcentaje para " + palabras[i] + ": ");
-            porcentajes[i] = entrada.nextInt();
+            boolean valido = false;
+            while (!valido) {
+                System.out.print("Ingrese el porcentaje para " + palabras[i] + ": ");
+                if (!entrada.hasNextInt()) {
+                    System.out.println("Debe ingresar un número.");
+                    entrada.next();
+                    continue;
+                }
+                int valor = entrada.nextInt();
+                if (valor < 0 || valor > 100) {
+                    System.out.println("El valor debe estar entre 0 y 100.");
+                } else {
+                    porcentajes[i] = valor;
+                    valido = true;
+                }
+            }
         }
         int tamBarra = 10;
         System.out.println("\nResultado (for):");
@@ -28,13 +43,29 @@ public class A01 {
     public void g3_CargaNombreShowWhile(Scanner entrada) {
         String[] palabras = {"Nikolai", "Gabriel", "Ortega", "Chugchilan"};
         int[] porcentajes = new int[palabras.length];
-        for (int i = 0; i < palabras.length; i++) {
-            System.out.print("Ingrese el porcentaje para " + palabras[i] + ": ");
-            porcentajes[i] = entrada.nextInt();
+        int i = 0;
+        while (i < palabras.length) {
+            boolean valido = false;
+            while (!valido) {
+                System.out.print("Ingrese el porcentaje para " + palabras[i] + ": ");
+                if (!entrada.hasNextInt()) {
+                    System.out.println("Debe ingresar un número.");
+                    entrada.next();
+                    continue;
+                }
+                int valor = entrada.nextInt();
+                if (valor < 0 || valor > 100) {
+                    System.out.println("El valor debe estar entre 0 y 100.");
+                } else {
+                    porcentajes[i] = valor;
+                    valido = true;
+                }
+            }
+            i++;
         }
         int tamBarra = 10;
         System.out.println("\nResultado (while):");
-        int i = 0;
+        i = 0;
         while (i < palabras.length) {
             int visible = palabras[i].length() * porcentajes[i] / 100;
             String parcial = palabras[i].substring(0, visible);
@@ -60,13 +91,29 @@ public class A01 {
     public void g3_CargaNombreShowDoWhile(Scanner entrada) {
         String[] palabras = {"Nikolai", "Gabriel", "Ortega", "Chugchilan"};
         int[] porcentajes = new int[palabras.length];
-        for (int i = 0; i < palabras.length; i++) {
-            System.out.print("Ingrese el porcentaje para " + palabras[i] + ": ");
-            porcentajes[i] = entrada.nextInt();
-        }
+        int i = 0;
+        do {
+            boolean valido = false;
+            while (!valido) {
+                System.out.print("Ingrese el porcentaje para " + palabras[i] + ": ");
+                if (!entrada.hasNextInt()) {
+                    System.out.println("Debe ingresar un número.");
+                    entrada.next();
+                    continue;
+                }
+                int valor = entrada.nextInt();
+                if (valor < 0 || valor > 100) {
+                    System.out.println("El valor debe estar entre 0 y 100.");
+                } else {
+                    porcentajes[i] = valor;
+                    valido = true;
+                }
+            }
+            i++;
+        } while (i < palabras.length);
         int tamBarra = 10;
         System.out.println("\nResultado (do-while):");
-        int i = 0;
+        i = 0;
         do {
             int visible = palabras[i].length() * porcentajes[i] / 100;
             String parcial = palabras[i].substring(0, visible);
@@ -89,4 +136,5 @@ public class A01 {
         } while (i < palabras.length);
     }
 }
+
 

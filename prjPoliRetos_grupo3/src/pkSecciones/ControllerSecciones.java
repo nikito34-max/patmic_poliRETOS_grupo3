@@ -47,6 +47,7 @@ public class ControllerSecciones {
         boolean salir = false;
         while (!salir) {
             System.out.println();
+            System.out.println("=== POLIRETOS BY GRUPO 3 ===");
             System.out.println("Seleccione el módulo:");
             System.out.println("\t1 - Series Numéricas");
             System.out.println("\t2 - Series de Caracteres");
