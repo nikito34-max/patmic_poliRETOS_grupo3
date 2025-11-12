@@ -4,7 +4,7 @@
 public class Figura19 extends FigurasM {
     public Figura19() {
         super();
-        this.nombre = "Figura18";
+        this.nombre = "Figura19";
     }
 
 
