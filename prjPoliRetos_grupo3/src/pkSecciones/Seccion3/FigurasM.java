@@ -9,9 +9,10 @@ public String nombre = "Cuadrado";
     
 
     public FigurasM () {
-        this.nombre = "Cuadrado";
-        this.simbolo1 = "*";
+        
     }   
 
-    public abstract void dibujar ( int tamanolado) ;
+    public abstract void dibujar_con_for ( int tamanolado) ;
+    public abstract void dibujar_con_do_while (int tamanolado);
+    public abstract void dibujar_con_while (int tamanolado);
 }

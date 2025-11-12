@@ -7,7 +7,7 @@ public class Figura2 extends FigurasM {
     }
 
     @Override
-    public void dibujar(int tamanolado) {
+    public void dibujar_con_for(int tamanolado) {
         for (int i = 0; i < tamanolado; i++) {
             for (int j = 0; j < tamanolado; j++) {
             if (i == 0 || i == tamanolado - 1 || j == 0 || j == tamanolado - 1) {
@@ -23,6 +23,7 @@ public class Figura2 extends FigurasM {
         System.out.println(); 
     } 
   }
+    @Override
  public void dibujar_con_do_while(int tamanolado) {
     int i = 0;
     do {
@@ -45,6 +46,27 @@ public class Figura2 extends FigurasM {
         i++; 
     } while (i < tamanolado);
  }
+    @Override
+ public void dibujar_con_while(int tamanolado) {
+    int i=0;
+    while (i<tamanolado){
+        int j=0;
+        while (j<tamanolado) {
+            if (i == 0 || i == tamanolado - 1 || j == 0 || j == tamanolado - 1) {
+                if (j % 2 == 0 && i % 2 == 0) 
+                    System.out.print(simbolo1 + " ");
+                 else 
+                    System.out.print(simbolo4 + " ");
+            } else {
+                System.out.print("  ");
+            }  
+         j++;
+        }  
+    System.out.println();
+    i++; 
+    }
+   
+     }
 
 }
            

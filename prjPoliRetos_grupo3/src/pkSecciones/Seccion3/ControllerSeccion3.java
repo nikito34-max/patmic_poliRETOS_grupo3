@@ -36,9 +36,13 @@ import java.util.Scanner;
             String nombreFigura = figuras.get(i).getClass().getSimpleName();
             System.out.print("Ingrese el tamaño del lado de la " +  nombreFigura +" " );
             tamanos.add(scanner.nextInt());
-            System.out.println("------------------------------------");
+           System.out.println("...........................");
             System.out.println( nombreFigura); 
-            figuras.get(i).dibujar(tamanos.get(i)); 
+           figuras.get(i).dibujar_con_for(tamanos.get(i));
+           System.out.println("............................."); 
+           figuras.get(i).dibujar_con_do_while(tamanos.get(i)); 
+           System.out.println(".............................");
+           figuras.get(i).dibujar_con_while(tamanos.get(i));
         }
         
         scanner.close();

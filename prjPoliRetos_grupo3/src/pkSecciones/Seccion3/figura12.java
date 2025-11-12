@@ -1,4 +1,4 @@
-﻿package pkSecciones.Seccion3;
+﻿package pkSecciones.Seccion3;;
 
 public class figura12 extends FigurasM {
 
@@ -7,8 +7,7 @@ public class figura12 extends FigurasM {
         this.nombre = "Figura12";
     }
     @Override
-    
-    public void dibujar (int altura){
+    public void dibujar_con_for (int altura){
         for (int i = altura; i >= 1; i--) { 
             for (int j = 1; j <= i; j++) {
                 System.out.print(j);
@@ -16,8 +15,8 @@ public class figura12 extends FigurasM {
             System.out.println();
         }
     }
-    
-    public void dibujarDoWhile(int altura) {
+    @Override
+    public void dibujar_con_do_while(int altura) {
     int i = altura;
     do {
         int j = 1; 
@@ -30,6 +29,19 @@ public class figura12 extends FigurasM {
         i--;
         
     } while (i >= 1); 
+  } 
+  @Override
+  public void dibujar_con_while (int altura){
+    int i=altura;
+      while (i>=1){
+    int j=1;
+    while (j <= i){
+         System.out.print(j);
+            j++;
+         }
+        System.out.println();
+        i--;
+   }
 
   }
 } 

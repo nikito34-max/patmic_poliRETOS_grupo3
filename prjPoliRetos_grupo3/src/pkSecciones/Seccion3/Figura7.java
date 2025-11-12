@@ -6,7 +6,7 @@ public class Figura7 extends FigurasM {
         this.nombre = "Figura7";
     }
     @Override
-    public void dibujar(int numerodepalitos) {
+    public void dibujar_con_for(int numerodepalitos) {
         for (int i = 0; i < numerodepalitos; i++) {
             for (int j = 0; j < numerodepalitos; j++) {
                 if (j == i && j % 2 == 0) {
@@ -20,31 +20,44 @@ public class Figura7 extends FigurasM {
             System.out.println();
         }
     }
-
+ @Override
   public void dibujar_con_do_while (int totaldibujo){
-    int contadorfila = 1;
-
+     int i=0;
+     if (totaldibujo>0){
     do {
-        for (int i = 0; i < contadorfila - 1; i++) {
-            System.out.print(" ");
-        }
-        System.out.print("__");
+       int j=0;
+       int numEspacios=i;
 
-        System.out.println(); 
-
-        if (contadorfila < totaldibujo) {
-            for (int i = 0; i < contadorfila; i++) { 
-                System.out.print(" ");
-            }
+       while (j <(numEspacios) ) { 
+            System.out.print("  ");
+            j++; }
             
-            System.out.print("|");
-
-            System.out.println(); 
-        }
-        contadorfila++;
-        
-    } while (contadorfila <= totaldibujo);
-  }
+        if (j == i && j % 2 == 0)
+        System.out.print( simbolo2 + " ");
+        else System.out.print( simbolo3);
+       System.out.println();
+       i++;
+     } while (i < totaldibujo);
+    }
+   }
+  @Override
+ public void dibujar_con_while(int totaldibujo) {
+    int i=0;
+    while (i<totaldibujo){
+        int j=0;
+        int numEspacios =i; 
+        while (j<numEspacios) {
+        System.out.print("  ");
+        j++;
+         }     
+      if (j == i && j % 2 == 0)
+        System.out.print( simbolo2 + " ");
+        else System.out.print( simbolo3);
+    
+       System.out.println();
+       i++;
+     } 
+   }
 }
 
 
