@@ -3,6 +3,19 @@ package pkSecciones.Seccion4;
 import java.util.Scanner;
 
 public class C08 {
+    private String solicitarRespuesta(Scanner entrada) {
+        String respuesta;
+        while (true) {
+            respuesta = entrada.nextLine().trim().toLowerCase();
+            if (!respuesta.isEmpty() && respuesta.matches("[a-záéíóúñ]+")) {
+                break;
+            } else {
+                System.out.print("Error: Ingresa solo letras. Intenta nuevamente: ");
+            }
+        }
+        return respuesta;
+    }
+
     public void g3_anagramaShowFor(Scanner entrada) {
         entrada.nextLine();
         String[][] conjunto = {
@@ -21,9 +34,9 @@ public class C08 {
         System.out.println("- " + palabra);
         for (int intentos = 3; intentos > 0 && !acierto; intentos--) {
             System.out.print("(FOR) Tu respuesta: ");
-            respuesta = entrada.nextLine().toLowerCase();
+            respuesta = solicitarRespuesta(entrada);
             if (respuesta.equals(anagrama)) {
-                System.out.println("¡Correcto!");
+                System.out.println("Correcto");
                 acierto = true;
             } else if (intentos > 1) {
                 System.out.println("Incorrecto. Te quedan " + (intentos - 1) + " intento(s).");
@@ -51,9 +64,9 @@ public class C08 {
         System.out.println("- " + palabra);
         while (intentos > 0 && !acierto) {
             System.out.print("(WHILE) Tu respuesta: ");
-            respuesta = entrada.nextLine().toLowerCase();
+            respuesta = solicitarRespuesta(entrada);
             if (respuesta.equals(anagrama)) {
-                System.out.println("¡Correcto!");
+                System.out.println("Correcto");
                 acierto = true;
             } else {
                 intentos--;
@@ -83,9 +96,9 @@ public class C08 {
         System.out.println("- " + palabra);
         do {
             System.out.print("(DO-WHILE) Tu respuesta: ");
-            respuesta = entrada.nextLine().toLowerCase();
+            respuesta = solicitarRespuesta(entrada);
             if (respuesta.equals(anagrama)) {
-                System.out.println("¡Correcto!");
+                System.out.println("Correcto");
                 acierto = true;
             } else {
                 intentos--;
@@ -96,3 +109,4 @@ public class C08 {
         if (!acierto) System.out.println("Perdiste con el do-while. El anagrama era: " + anagrama.toUpperCase());
     }
 }
+

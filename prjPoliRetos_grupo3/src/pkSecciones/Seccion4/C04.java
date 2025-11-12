@@ -3,11 +3,24 @@ package pkSecciones.Seccion4;
 import java.util.Scanner;
 
 public class C04 {
+    private char solicitarLetra(Scanner entrada) {
+        char letra;
+        while (true) {
+            System.out.print("Ingresa la letra a eliminar: ");
+            String input = entrada.next().toLowerCase();
+            if (input.length() == 1 && Character.isLetter(input.charAt(0))) {
+                letra = input.charAt(0);
+                break;
+            } else {
+                System.out.println("Error: Debes ingresar una sola letra.");
+            }
+        }
+        return letra;
+    }
+
     public void g3_eliminarLetraShowFor(String frase, Scanner entrada) {
         frase = frase.toLowerCase();
-        System.out.print("Ingresa la letra a eliminar: ");
-        char letra = entrada.next().charAt(0);
-        letra = Character.toLowerCase(letra);
+        char letra = solicitarLetra(entrada);
         String resultado = "";
         for (int i = 0; i < frase.length(); i++) {
             char c = frase.charAt(i);
@@ -21,9 +34,7 @@ public class C04 {
 
     public void g3_eliminarLetraShowWhile(String frase, Scanner entrada) {
         frase = frase.toLowerCase();
-        System.out.print("Ingresa la letra a eliminar: ");
-        char letra = entrada.next().charAt(0);
-        letra = Character.toLowerCase(letra);
+        char letra = solicitarLetra(entrada);
         String resultado = "";
         int i = 0;
         while (i < frase.length()) {
@@ -39,9 +50,7 @@ public class C04 {
 
     public void g3_eliminarLetraShowDoWhile(String frase, Scanner entrada) {
         frase = frase.toLowerCase();
-        System.out.print("Ingresa la letra a eliminar: ");
-        char letra = entrada.next().charAt(0);
-        letra = Character.toLowerCase(letra);
+        char letra = solicitarLetra(entrada);
         String resultado = "";
         int i = 0;
         do {
