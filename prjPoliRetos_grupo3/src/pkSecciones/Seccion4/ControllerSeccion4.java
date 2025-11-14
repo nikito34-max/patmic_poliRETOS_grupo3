@@ -6,9 +6,9 @@ public class ControllerSeccion4 {
     public ControllerSeccion4(String frase, Scanner entrada) {
         int opcion = -1;
         while (opcion != 10) {
-            System.out.println("Tu cadena de carácteres (frase) es: "+ frase);
             System.out.println("\n=== MENÚ SECCIÓN 4 ===");
-            System.out.println("1) Contar vocales");
+            System.out.println("\nTu cadena de carácteres (frase) es: "+ frase);
+            System.out.println("\n1) Contar vocales");
             System.out.println("2) Contar consonantes");
             System.out.println("3) Eliminar vocal");
             System.out.println("4) Eliminar letra");

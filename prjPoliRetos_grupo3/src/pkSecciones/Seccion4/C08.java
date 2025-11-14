@@ -36,7 +36,8 @@ public class C08 {
             System.out.print("(FOR) Tu respuesta: ");
             respuesta = solicitarRespuesta(entrada);
             if (respuesta.equals(anagrama)) {
-                System.out.println("Correcto");
+                System.out.println("Correcto!!");
+                System.out.println("Presiona Enter para continuar...");
                 acierto = true;
             } else if (intentos > 1) {
                 System.out.println("Incorrecto. Te quedan " + (intentos - 1) + " intento(s).");
@@ -66,7 +67,8 @@ public class C08 {
             System.out.print("(WHILE) Tu respuesta: ");
             respuesta = solicitarRespuesta(entrada);
             if (respuesta.equals(anagrama)) {
-                System.out.println("Correcto");
+                System.out.println("Correcto!!");
+                System.out.println("Presiona Enter para continuar...");
                 acierto = true;
             } else {
                 intentos--;
@@ -98,7 +100,7 @@ public class C08 {
             System.out.print("(DO-WHILE) Tu respuesta: ");
             respuesta = solicitarRespuesta(entrada);
             if (respuesta.equals(anagrama)) {
-                System.out.println("Correcto");
+                System.out.println("Correcto!!");
                 acierto = true;
             } else {
                 intentos--;
