@@ -7,10 +7,10 @@ public class C08 {
         String respuesta;
         while (true) {
             respuesta = entrada.nextLine().trim().toLowerCase();
-            if (!respuesta.isEmpty() && respuesta.matches("[a-záéíóúñ]+")) {
+            if (!respuesta.isEmpty() && respuesta.matches("[a-z]+")) {
                 break;
             } else {
-                System.out.print("Error: Ingresa solo letras. Intenta nuevamente: ");
+                System.out.print("Error: Ingresa solo letras, todo unido. Intenta nuevamente: ");
             }
         }
         return respuesta;
