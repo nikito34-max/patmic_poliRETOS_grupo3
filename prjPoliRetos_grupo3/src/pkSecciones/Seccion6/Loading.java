@@ -78,17 +78,28 @@ public class Loading {
             
             // Lógica para repetir el menú
             if (choice != 0) {
-                System.out.print("\n¿Desea ejecutar otra animación? (s/n): ");
-                String respuesta = scanner.nextLine().trim().toLowerCase();
-                ejecutarOtra = respuesta.startsWith("s");
+                String respuesta;
+
+                while (true) {
+                    System.out.print("\n¿Desea ejecutar otra animación? (s/n): ");
+                    respuesta = scanner.nextLine().trim().toLowerCase();
+
+                    if (respuesta.equals("s") || respuesta.equals("n")) {
+                        break;
+                    }
+
+                    System.out.println("Entrada inválida. Solo se acepta 's' o 'n'.");
+                }
+
+                ejecutarOtra = respuesta.equals("s");
                 System.out.println();
-            } else {
-                ejecutarOtra = false;
-            }
+
+                    } else {
+            ejecutarOtra = false;
+        }
+
 
         } while (ejecutarOtra);
-        
-        scanner.close();
     }
 
     // ===========================================
