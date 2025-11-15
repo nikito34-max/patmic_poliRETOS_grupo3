@@ -156,7 +156,7 @@ public class Automata05 extends Automata {
         g3_imprimirResultado(valido, str);
     }
 
-        @Override
+    @Override
     public void g3_ValidarWithDoWhile(String str) {
         if (str.isEmpty()) {
             g3_imprimirResultado(false, str);

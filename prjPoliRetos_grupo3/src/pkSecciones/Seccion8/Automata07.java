@@ -33,42 +33,12 @@ public class Automata07 extends Automata{
     }
 
     @Override
-public void g3_ValidarWithWhile(String str) {
-    boolean valido = false;
-    String palabra = "";
+    public void g3_ValidarWithWhile(String str) {
+        boolean valido = false;
+        String palabra = "";
 
-    int i = 0;
-    while (i < str.length()) {
-        char c = str.charAt(i);
-
-        if (Character.isLetter(c)) {
-            palabra += c;
-        } else if (c == '(' || c == ' ') {
-            break;
-        } else {
-            valido = false;
-            break;
-        }
-        i++;
-    }
-
-    if (palabra.equals("for") || palabra.equals("if") ||
-        palabra.equals("else") || palabra.equals("ifelse") ||
-        palabra.equals("foreach")) {
-        valido = true;
-    }
-
-    g3_imprimirResultado(valido, str);
-}
-
-@Override
-public void g3_ValidarWithDoWhile(String str) {
-    boolean valido = false;
-    String palabra = "";
-
-    int i = 0;
-    if (!str.isEmpty()) {
-        do {
+        int i = 0;
+        while (i < str.length()) {
             char c = str.charAt(i);
 
             if (Character.isLetter(c)) {
@@ -79,19 +49,47 @@ public void g3_ValidarWithDoWhile(String str) {
                 valido = false;
                 break;
             }
-
             i++;
-        } while (i < str.length());
+        }
+
+        if (palabra.equals("for") || palabra.equals("if") ||
+            palabra.equals("else") || palabra.equals("ifelse") ||
+            palabra.equals("foreach")) {
+            valido = true;
+        }
+
+        g3_imprimirResultado(valido, str);
     }
 
-    if (palabra.equals("for") || palabra.equals("if") ||
-        palabra.equals("else") || palabra.equals("ifelse") ||
-        palabra.equals("foreach")) {
-        valido = true;
+    @Override
+    public void g3_ValidarWithDoWhile(String str) {
+        boolean valido = false;
+        String palabra = "";
+
+        int i = 0;
+        if (!str.isEmpty()) {
+            do {
+                char c = str.charAt(i);
+
+                if (Character.isLetter(c)) {
+                    palabra += c;
+                } else if (c == '(' || c == ' ') {
+                    break;
+                } else {
+                    valido = false;
+                    break;
+                }
+
+                i++;
+            } while (i < str.length());
+        }
+
+        if (palabra.equals("for") || palabra.equals("if") ||
+            palabra.equals("else") || palabra.equals("ifelse") ||
+            palabra.equals("foreach")) {
+            valido = true;
+        }
+
+        g3_imprimirResultado(valido, str);
     }
-
-    g3_imprimirResultado(valido, str);
-}
-
-
 }

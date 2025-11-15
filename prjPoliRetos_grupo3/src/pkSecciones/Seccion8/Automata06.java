@@ -37,58 +37,22 @@ public class Automata06 extends Automata {
     }
 
     @Override
-public void g3_ValidarWithWhile(String str) {
-    boolean valido = false;
+    public void g3_ValidarWithWhile(String str) {
+        boolean valido = false;
 
-    if (str.isEmpty()) {
-        g3_imprimirResultado(false, str);
-        return;
-    }
-
-    char c0 = str.charAt(0);
-    if (!Character.isLetter(c0) && c0 != '_' && c0 != '$') {
-        g3_imprimirResultado(false, str);
-        return;
-    }
-
-    int i = 1;
-    while (i < str.length()) {
-        char c = str.charAt(i);
-
-        if (Character.isLetterOrDigit(c) || c == '_' || c == '$') {
-            valido = true;
-        } else if (c == ';' || c == ',' || c == '=') {
-            valido = true;
-            break;
-        } else {
-            valido = false;
-            break;
+        if (str.isEmpty()) {
+            g3_imprimirResultado(false, str);
+            return;
         }
 
-        i++;
-    }
+        char c0 = str.charAt(0);
+        if (!Character.isLetter(c0) && c0 != '_' && c0 != '$') {
+            g3_imprimirResultado(false, str);
+            return;
+        }
 
-    g3_imprimirResultado(valido, str);
-}
-
-@Override
-public void g3_ValidarWithDoWhile(String str) {
-    boolean valido = false;
-
-    if (str.isEmpty()) {
-        g3_imprimirResultado(false, str);
-        return;
-    }
-
-    char c0 = str.charAt(0);
-    if (!Character.isLetter(c0) && c0 != '_' && c0 != '$') {
-        g3_imprimirResultado(false, str);
-        return;
-    }
-
-    int i = 1;
-    if (str.length() > 1) {
-        do {
+        int i = 1;
+        while (i < str.length()) {
             char c = str.charAt(i);
 
             if (Character.isLetterOrDigit(c) || c == '_' || c == '$') {
@@ -102,12 +66,47 @@ public void g3_ValidarWithDoWhile(String str) {
             }
 
             i++;
-        } while (i < str.length());
-    } else {
-        valido = true;
+        }
+
+        g3_imprimirResultado(valido, str);
     }
 
-    g3_imprimirResultado(valido, str);
-}
+    @Override
+    public void g3_ValidarWithDoWhile(String str) {
+        boolean valido = false;
 
+        if (str.isEmpty()) {
+            g3_imprimirResultado(false, str);
+            return;
+        }
+
+        char c0 = str.charAt(0);
+        if (!Character.isLetter(c0) && c0 != '_' && c0 != '$') {
+            g3_imprimirResultado(false, str);
+            return;
+        }
+
+        int i = 1;
+        if (str.length() > 1) {
+            do {
+                char c = str.charAt(i);
+
+                if (Character.isLetterOrDigit(c) || c == '_' || c == '$') {
+                    valido = true;
+                } else if (c == ';' || c == ',' || c == '=') {
+                    valido = true;
+                    break;
+                } else {
+                    valido = false;
+                    break;
+                }
+
+                i++;
+            } while (i < str.length());
+        } else {
+            valido = true;
+        }
+
+        g3_imprimirResultado(valido, str);
+    }
 }

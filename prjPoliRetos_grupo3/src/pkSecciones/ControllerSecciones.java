@@ -17,7 +17,7 @@ public class ControllerSecciones {
 
         System.out.println("Iniciando Proyecto PoliRETOS Grupo 3");
         System.out.println("\nIntegrantes:");
-        System.out.println("muñoz.angelo\nortega.stefanie\nortega.nikolai\npaguay.fernando\npineda.danny");
+        System.out.println("muñoz.angelo\nortega.stefanie\nortega.nikolai\nsalazar.samara\npineda.danny");
         System.out.println("Antes de iniciar, ingresa los siguientes datos generales:");
 
         Scanner entrada = new Scanner(System.in);
@@ -42,11 +42,20 @@ public class ControllerSecciones {
         }
 
         System.out.print("Ingresa una frase: ");
-        frase = entrada.nextLine();
+        while (true) {
+            frase = entrada.nextLine().trim();
+            if (!frase.isEmpty() && frase.matches("[a-zA-Z ]+")) {
+                break;
+            } else {
+                System.out.print("Error: ingresa solo letras y espacios. Intenta nuevamente: ");
+            }
+        }
+
 
         boolean salir = false;
         while (!salir) {
             System.out.println();
+            System.out.println("=== POLIRETOS BY GRUPO 3 ===");
             System.out.println("Seleccione el módulo:");
             System.out.println("\t1 - Series Numéricas");
             System.out.println("\t2 - Series de Caracteres");
