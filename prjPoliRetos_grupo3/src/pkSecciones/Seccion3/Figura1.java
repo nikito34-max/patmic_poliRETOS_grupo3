@@ -7,7 +7,6 @@ public class Figura1 extends FigurasM {
     }
     @Override
     public void dibujar_con_for (int tamanolado){
-    
         for (int i = 0; i < tamanolado; i++) {
             for (int j = 0; j < tamanolado; j++) {
                 if (i == 0 || i == tamanolado - 1 || j == 0 || j == tamanolado - 1) {
