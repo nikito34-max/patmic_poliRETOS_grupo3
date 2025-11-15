@@ -1,4 +1,4 @@
-package pkSecciones.Seccion4;
+package pkSecciones.seccion4;
 
 public class C09 {
     public void g3_alternarMayusMinusShowFor(String frase) {

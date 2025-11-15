@@ -1,4 +1,4 @@
-package pkSecciones.Seccion7;
+package pkSecciones.seccion7;
 
 public class Recursion {
     public int g3_factorial(int num) {

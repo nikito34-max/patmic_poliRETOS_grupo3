@@ -1,4 +1,4 @@
-package pkSecciones.Seccion5;
+package pkSecciones.seccion5;
 
 public class A03 {
     public void g3_planoFuncionNombreShowFor() {

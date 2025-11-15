@@ -1,4 +1,4 @@
-package pkSecciones.Seccion5;
+package pkSecciones.seccion5;
 
 public class A04 {
     public void g3_crearMatrizXShowFor() {

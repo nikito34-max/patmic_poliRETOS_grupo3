@@ -1,4 +1,4 @@
-package pkSecciones.Seccion4;
+package pkSecciones.seccion4;
 
 import java.util.Scanner;
 

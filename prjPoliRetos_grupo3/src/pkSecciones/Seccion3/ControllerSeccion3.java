@@ -1,4 +1,4 @@
-package pkSecciones.Seccion3;
+package pkSecciones.seccion3;
 import java.util.Scanner;
  import java.util.ArrayList;
  import java.util.List;
@@ -6,7 +6,7 @@ import java.util.Scanner;
  public class ControllerSeccion3 { 
 
      public void inicializarfiguras () {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sas = new Scanner(System.in);
         
      List<FigurasM> figuras = new ArrayList<FigurasM>();
         
@@ -38,8 +38,8 @@ import java.util.Scanner;
             do {
                 System.out.print("Ingrese el tamaño del lado de la " + nombreFigura + " (Mínimo 2): ");
                 
-                if (scanner.hasNextInt()) {
-                    int entradaActual = scanner.nextInt();
+                if (sas.hasNextInt()) {
+                    int entradaActual = sas.nextInt();
                     
                     if (entradaActual >= 2) {
                         tamanoladoValido = entradaActual;
@@ -50,7 +50,7 @@ import java.util.Scanner;
                     }
                 } else {
                     System.out.println("ERROR: Entrada no válida. Por favor, ingrese un número entero.");
-                    scanner.next(); 
+                    sas.next(); 
             }
            }while (true); 
             
@@ -69,7 +69,6 @@ import java.util.Scanner;
             System.out.println("  Dibujada con while:");
             figuras.get(i).dibujar_con_while(tamanoladoValido);   
     }
-    scanner.close();
    }
 }
  

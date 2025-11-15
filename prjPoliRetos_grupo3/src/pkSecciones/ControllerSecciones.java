@@ -3,14 +3,14 @@ package pkSecciones;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import pkSecciones.Seccion1.ControllerSeccion1;
-import pkSecciones.Seccion2.ControllerSeccion2;
-import pkSecciones.Seccion3.ControllerSeccion3;
-import pkSecciones.Seccion4.ControllerSeccion4;
-import pkSecciones.Seccion5.ControllerSeccion5;
-import pkSecciones.Seccion6.ControllerSeccion6;
-import pkSecciones.Seccion7.ControllerSeccion7;
-import pkSecciones.Seccion8.ControllerSeccion8;
+import pkSecciones.seccion1.ControllerSeccion1;
+import pkSecciones.seccion2.ControllerSeccion2;
+import pkSecciones.seccion3.ControllerSeccion3;
+import pkSecciones.seccion4.ControllerSeccion4;
+import pkSecciones.seccion5.ControllerSeccion5;
+import pkSecciones.seccion6.ControllerSeccion6;
+import pkSecciones.seccion7.ControllerSeccion7;
+import pkSecciones.seccion8.ControllerSeccion8;
 
 public class ControllerSecciones {
     public void ejecutar() {

@@ -1,4 +1,4 @@
-package pkSecciones.Seccion2;
+package pkSecciones.seccion2;
 public class SeriesCaracteres {
     private static int numTerminos;
 

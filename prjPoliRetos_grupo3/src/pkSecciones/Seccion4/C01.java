@@ -1,4 +1,4 @@
-package pkSecciones.Seccion4;
+package pkSecciones.seccion4;
 
 public class C01 {
     public void g3_contarVocalesShowFor(String frase) {

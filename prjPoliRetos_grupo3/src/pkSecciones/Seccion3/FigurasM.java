@@ -1,4 +1,4 @@
-package pkSecciones.Seccion3;
+package pkSecciones.seccion3;
 public abstract class FigurasM {
 public String nombre = "Cuadrado";
     public String simbolo1 = "*";

@@ -1,4 +1,4 @@
-package pkSecciones.Seccion8;
+package pkSecciones.seccion8;
 
 public class Automata01 extends Automata {
     public Automata01() {

@@ -1,4 +1,4 @@
-package pkSecciones.Seccion6;
+package pkSecciones.seccion6;
 public class LoadingDelay {
 
 }

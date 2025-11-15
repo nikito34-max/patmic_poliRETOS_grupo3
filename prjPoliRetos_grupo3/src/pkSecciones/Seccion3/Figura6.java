@@ -1,4 +1,4 @@
-﻿package pkSecciones.Seccion3;
+﻿package pkSecciones.seccion3;
 
 public class Figura6 extends FigurasM {
     public Figura6() {

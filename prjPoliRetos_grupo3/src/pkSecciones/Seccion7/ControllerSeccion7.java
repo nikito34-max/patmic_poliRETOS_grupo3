@@ -1,4 +1,4 @@
-package pkSecciones.Seccion7;
+package pkSecciones.seccion7;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

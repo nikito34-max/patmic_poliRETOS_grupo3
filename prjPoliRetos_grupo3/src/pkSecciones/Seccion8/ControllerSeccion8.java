@@ -1,4 +1,4 @@
-package pkSecciones.Seccion8;
+package pkSecciones.seccion8;
 
 import java.util.ArrayList;
 import java.util.List;

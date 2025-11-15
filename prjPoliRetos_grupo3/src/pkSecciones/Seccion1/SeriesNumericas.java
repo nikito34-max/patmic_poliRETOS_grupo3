@@ -1,4 +1,4 @@
-package pkSecciones.Seccion1;
+package pkSecciones.seccion1;
 public class SeriesNumericas {
     private static int numTerminos;
 
