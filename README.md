@@ -24,3 +24,5 @@ El orden en secciones es el siguiente:
 - Sección 6: Loading.
 - Sección 7: Recursión.
 - Sección 8: Grafos y autómatas.
+
+Link del repositorio en GitHub se encuentra [AQUI](https://github.com/nikito34-max/patmic_poliRETOS_grupo3)

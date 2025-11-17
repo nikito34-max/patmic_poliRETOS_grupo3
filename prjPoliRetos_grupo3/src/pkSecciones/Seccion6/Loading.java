@@ -88,7 +88,7 @@ public class Loading {
                         break;
                     }
 
-                    System.out.println("Entrada inválida. Solo se acepta 's' o 'n'.");
+                    System.out.println("Entrada inválida. Solo se acepta 's' para si o 'n' para no.");
                 }
 
                 ejecutarOtra = respuesta.equals("s");
